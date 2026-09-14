@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredoka:wght@400;600&family=Prompt:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #ffffff;
+    color: #4a4a4a;
+}
+
+/* Header แถบบนสุด */
+.top-bar {
+    background-color: #00d2c8; /* สีเขียวมิ้นต์สดใส */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* โลโก้กลาง */
+.site-header {
+    text-align: center;
+    padding: 20px 0 10px;
+    background: #fff;
+}
+
+.brand-logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 38px;
+    color: #ff85b3;
+}
+
+/* เมนูนำทางแบบ Y2K */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background: #fff;
+    border-bottom: 1px solid #ffe6f0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #888;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: #ff5c93;
+    font-weight: bold;
+    border-bottom: 2px solid #ff5c93;
+}
+
+/* Hero Banner (ลายตารางชมพู) */
+.hero-banner {
+    background-color: #ffd6e7;
+    background-image: radial-gradient(#ffb3d1 1px, transparent 0);
+    background-size: 16px 16px; /* ลายจุด/ตาราง พาสเทล */
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-title-sub {
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    color: #ffffff;
+    text-shadow: 2px 2px #ff85b3;
+}
+
+.hero-title-main {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 55px;
+    color: #00c4cc;
+    text-shadow: 3px 3px #fff;
+    margin-bottom: 20px;
+}
+
+.btn-pink {
+    display: inline-block;
+    background: #fff;
+    color: #ff5c93;
+    border: 2px solid #ff5c93;
+    padding: 8px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-pink:hover {
+    background: #ff5c93;
+    color: #fff;
+}
+
+/* Grid การ์ด 2 ช่อง (Our Faves / New Items) */
+.section-two-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.card-box {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-overlay-text {
+    position: absolute;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* ส่วนแสดงผลงาน / Products Slider Area */
+.shop-section {
+    background-color: #f7e8f6;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-head {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #666;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 16px;
+    width: 180px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+    font-size: 13px;
+    color: #444;
+}
+
+.product-card p {
+    font-size: 12px;
+    color: #ff5c93;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* ส่วน Our Story ด้านล่าง */
+.story-section {
+    background-color: #fff0f5;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.story-text {
+    max-width: 350px;
+}
+
+.story-text h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: #ff5c93;
+    line-height: 0.9;
+}
+
+.story-text h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.polaroid-frame {
+    background: #fff;
+    padding: 12px 12px 35px 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transform: rotate(-3deg);
+    width: 200px;
+}
+
+.polaroid-frame img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    font-size: 11px;
+    color: #aaa;
+    border-top: 1px solid #eee;
+}
