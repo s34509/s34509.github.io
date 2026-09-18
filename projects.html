@@ -1,3 +1,4 @@
+ts.html"}
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -5,72 +6,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ผลงานทั้งหมด - MY PORTFOLIO</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ===== จัดวางผลงาน 4 รูป ===== /
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            transition: all 0.35s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 45px rgba(99, 102, 241, 0.35);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        .project-info p {
+            margin: 0;
+            line-height: 1.7;
+            opacity: 0.75;
+        }
+
+        / ===== หน้าจอมือถือ ===== */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .project-card img {
+                height: 250px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
+    <!-- ===== TOP NAV ===== -->
     <div class="top-nav">
-        <div class="logo">MY PORTFOLIO</div>
+
+        <div class="logo">
+            MY PORTFOLIO
+        </div>
+
         <div class="search-box">
             <input type="text" placeholder="ค้นหาผลงาน...">
         </div>
+
         <div class="top-actions">
-            <a href="contact.html" class="btn-map">ติดต่อฉัน ↗</a>
+            <a href="contact.html" class="btn-map">
+                ติดต่อฉัน ↗
+            </a>
         </div>
+
     </div>
 
+
+    <!-- ===== MENU ===== -->
     <nav class="main-nav">
         <ul>
-            <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="about.html">คำนำ & ประวัติ</a></li>
-            <li><a href="projects.html" class="active">ผลงานทั้งหมด</a></li>
-            <li><a href="contact.html">ช่องทางติดต่อ</a></li>
+            <li>
+                <a href="index.html">
+                    หน้าแรก
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    คำนำ & ประวัติ
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html" class="active">
+                    ผลงานทั้งหมด
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    ช่องทางติดต่อ
+                </a>
+            </li>
         </ul>
     </nav>
 
+
+    <!-- ===== PORTFOLIO ===== -->
     <section class="portfolio-section" style="min-height: 80vh;">
-        <div class="breadcrumb" style="color: #a5b4fc;">Portfolio / Projects</div>
-        <h2 style="font-size: 36px; margin-bottom: 10px;">ALL PROJECTS</h2>
-        <p style="margin-bottom: 30px; opacity: 0.8;">ผลงานทั้งหมดที่มีมา</p>
 
-        <div class="grid-container">
-            <div class="project-card">
-                <img src="CP.jpg" alt="Project 1">
-                <div class="project-info">
-                    <h3>01. Choral singing on Chinese New Year</h3>
-                    <p>การร้องประสานเสียงในวันตรุษจีน</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="CAMP.jpg" alt="Project 2">
-                <div class="project-info">
-                    <h3>02. Attending a camp at Phanatpittayakarn School</h3>
-                    <p>เข้าค่ายที่โรงเรียนพนัสพิทยาคาร</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="CN.jpg" alt="Project 3">
-                <div class="project-info">
-                    <h3>03. Join in wearing Chinese attire for the Chinese New Year celebration</h3>
-                    <p>ร่วมแต่งกายชุดจีนในงานตรุษจีน</p>
-                </div>
-            </div>
+        <div class="breadcrumb" style="color: #a5b4fc;">
+            Portfolio / Projects
         </div>
 
-        <div class="grid-container">
-            <div class="project-card">
-                <img src="IMG_3475.jpeg" alt="Project 1">
-                <div class="project-info">
-                    <h3>04. เข้าร่วมเดินขบวนวันต่อต้านยาเสพติด</h3>
-                    <p>รับเกียรติบัตรเป็นแกนนำชุมนุมเสมารักษ์ ดำเนินงานการป้องกันและรณรงค์ต่อต้านยาเสพติดและอบายมุขในสถานศึกษา</p>
-                </div>
-            </div>
-            
+        <h2 style="font-size: 36px; margin-bottom: 10px;">
+            ALL PROJECTS
+        </h2>
 
+        <p style="margin-bottom: 30px; opacity: 0.8;">
+            ผลงานทั้งหมดที่มีมา
+        </p>
+
+
+        <!-- ===== รูปผลงานทั้ง 4 รูป ===== -->
+        <div class="grid-container">
+
+
+            <!-- รูปที่ 1 -->
+            <div class="project-card">
+
+                <img src="CP.jpg"
+                     alt="การร้องประสานเสียงในวันตรุษจีน">
+
+                <div class="project-info">
+
+                    <h3>
+                        01. Choral singing on Chinese New Year
+                    </h3>
+
+                    <p>
+                        การร้องประสานเสียงในวันตรุษจีน
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- รูปที่ 2 -->
+            <div class="project-card">
+
+                <img src="CAMP.jpg"
+                     alt="เข้าค่ายที่โรงเรียนพนัสพิทยาคาร">
+
+                <div class="project-info">
+
+                    <h3>
+                        02. Attending a camp at Phanatpittayakarn School
+                    </h3>
+
+                    <p>
+                        เข้าค่ายที่โรงเรียนพนัสพิทยาคาร
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- รูปที่ 3 -->
+            <div class="project-card">
+
+                <img src="CN.jpg"
+                     alt="ร่วมแต่งกายชุดจีนในงานตรุษจีน">
+
+                <div class="project-info">
+
+                    <h3>
+                        03. Join in wearing Chinese attire
+                        for the Chinese New Year celebration
+                    </h3>
+
+                    <p>
+                        ร่วมแต่งกายชุดจีนในงานตรุษจีน
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- รูปที่ 4 -->
+            <div class="project-card">
+
+                <img src="IMG_3475.jpeg"
+                     alt="กิจกรรมวันต่อต้านยาเสพติด">
+
+                <div class="project-info">
+
+                    <h3>
+                        04. เข้าร่วมเดินขบวนวันต่อต้านยาเสพติด
+                    </h3>
+
+                    <p>
+                        รับเกียรติบัตรเป็นแกนนำชุมนุมเสมารักษ์
+                        ดำเนินงานการป้องกันและรณรงค์ต่อต้านยาเสพติด
+                        และอบายมุขในสถานศึกษา
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- ===== ปุ่มกลับหน้าหลัก ===== -->
         <div style="margin-top: 40px; text-align: center;">
-            <a href="index.html" class="btn-map" style="display: inline-block;">⬅️ กลับสู่หน้าหลัก</a>
-        </div>
-    </section>
 
-</body>
-</html>
-
+            <a href="index.html"
+               class="btn-map"
+               styl
